@@ -14,7 +14,7 @@ var ciudad, tempCiudad, humCiudad, climCiudad;
 button.onclick = function(e){
     e.preventDefault();
     var ciu = document.getElementById("ciudad").value;
-    fetch('http://api.openweathermap.org/data/2.5/weather?q='+ciu+'&appid=32cec1b7e8873634c7ba8548033cc9ef')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q='+ciu+'&appid=32cec1b7e8873634c7ba8548033cc9ef')
     .then((resp) => resp.json())
     .then(function(data) {
       blockWelcome.style.display = 'none ';
