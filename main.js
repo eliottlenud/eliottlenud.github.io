@@ -42,7 +42,7 @@ var favs = document.getElementById("favs");
 document.getElementById("addFav").onclick = function(e){
   e.preventDefault();
   var node = document.createElement("div");  
-  node.className = 'fav flex-column container';
+  node.className = 'fav flex-column container bg-light';
   var p = document.createElement('p');
   var p2 = document.createElement('p'); 
   var p3 = document.createElement('p');       
